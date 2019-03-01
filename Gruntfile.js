@@ -7,8 +7,8 @@ module.exports = function(grunt) {
         uglify: {
             target: {
                 files: {
-                    'js/player-audio.min.js': [
-                        'js/player-audio.js'
+                    'js/popup.min.js': [
+                        'js/popup.js'
                     ]
                 }
             }
