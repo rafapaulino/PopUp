@@ -1,0 +1,21 @@
+{
+  "name": "rafa-popup",
+  "homepage": "https://github.com/rafapaulino/PopUp",
+  "description": "Abre uma janela popup com javascript",
+  "main": "",
+  "license": "MIT",
+  "keywords": [
+    "navbar",
+    "alert navbar"
+  ],
+  "authors": [
+    "Rafael Paulino"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
