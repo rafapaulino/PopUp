@@ -6,7 +6,7 @@
         var $private = {};
         var $public = {};
         var $myWindow;
-        var $documentUrl = document.URL;
+        //var $documentUrl = document.URL;
 
         $public.init = function() {
             window.onload = function(e) { 
@@ -24,7 +24,7 @@
                     
             var $this = this;
             var $url = $this.getAttribute('href');
-            $url = encodeURI($url + $documentUrl);
+            $url = encodeURI($url);
             
             $private.openPopUp($url,'');
         };
