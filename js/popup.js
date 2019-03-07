@@ -6,7 +6,8 @@
         var $private = {};
         var $public = {};
         var $myWindow;
-        //var $documentUrl = document.URL;
+        var $max = 710;
+        var $min = 405;
 
         $public.init = function() {
             window.onload = function(e) { 
@@ -44,31 +45,27 @@
         };
 
         $private.setPopUpWidth = function() {
-            var max = 610;
-            var min = 305;
             var screenW = screen.width;
             var width = $private.getPercent(screenW, 60);
             
-            if (width > max)
-            width = max;
+            if (width > $max)
+            width = $max;
 
-            if (width > min)
-            width = min;
+            if (width > $min)
+            width = $min;
 
             return width;
         };
 
         $private.setPopUpHeight = function() {
-            var max = 600;
-            var min = 300;
             var screenH = screen.height;
             var height = $private.getPercent(screenH, 60);
             
-            if (height > max)
-            height = max;
+            if (height > $max)
+            height = $max;
 
-            if (height > min)
-            height = min;
+            if (height > $min)
+            height = $min;
 
             return height;
         };
